@@ -1,0 +1,10 @@
+services:
+  weather-app:
+    build:
+      context: .
+    container_name: cep_weather_api_local
+    ports:
+      - "8080:8080"
+    environment:
+      - WEATHER_API_KEY=SUA_CHAVE_AQUI
+    restart: unless-stopped
