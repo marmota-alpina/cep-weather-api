@@ -121,4 +121,12 @@ Para executar os testes automatizados definidos no projeto, utilize o comando a 
 ```bash
 go test
 
-```` 
+````
+
+### API Publicada Google Cloud Run
+
+```bash
+
+curl --location 'https://cep-weather-api-554561371689.us-east1.run.app/weather/{brazilian-cep}'
+
+````
